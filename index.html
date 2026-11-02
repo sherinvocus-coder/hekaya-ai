@@ -130,5 +130,14 @@ function readSavedBook(name,index){const b=memory[name]?.books?.[index];if(!b)re
 document.querySelectorAll('[data-lib-tab]').forEach(b=>b.addEventListener('click',()=>{libraryTab=b.dataset.libTab;renderLibrary()}));$('libraryKid').addEventListener('change',renderLibrary);
 
 profile(active,age);setLanguage('egy');page('home');
+
+<section style="max-width:800px;margin:40px auto;padding:20px;text-align:center" dir="rtl">
+  <h2>🎬 شاهد فيديو حكاية AI</h2>
+  <video controls playsinline style="width:100%;border-radius:16px">
+    <source src="HEKAYA-DEMO.mov" type="video/quicktime">
+    المتصفح لا يدعم تشغيل الفيديو.
+  </video>
+</section>
+
 </script>
 </body></html>
